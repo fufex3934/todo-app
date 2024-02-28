@@ -12,5 +12,6 @@ router.get("/",todo.homeController );
   router.get("/delete-todo", todo.deleteTodoController);
   
   router.post('/add-todo',todo.addTodoController);
-
+  router.post('/update-todo/:id',todo.updateTodo);
+  router.get('/confirm-delete',todo.deleteTodo);
   module.exports = router;
